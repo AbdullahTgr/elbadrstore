@@ -13,7 +13,7 @@
                     </div>
 
                     @empty
-                        
+                         
                     <div class="col-lg-3">
                         <div class="categories__item set-bg" data-setbg="/img/categories/cat-1.jpg">
                             <h5><a href="#">{{ trans('sentence.addproductplease') }}</a></h5>
@@ -143,16 +143,15 @@
 
                 
             </div>
-            
-            <div class="row featured__filter ">
-                sss
-            </div>
+             
 
 
         </div>
-        <div class="row featured__filter">
-                <button class="loadmore" data-id="{{ $last }}" >Load More</button>
-        </div>
+        <div class="row featured__filter loadingarea">
+
+                <button class="loadmore" data-id="{{ $last }}" >... المذيد</button>
+        </div> 
+
     </section>
     
     <!-- Featured Section End -->

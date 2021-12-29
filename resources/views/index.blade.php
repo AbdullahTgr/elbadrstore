@@ -44,7 +44,7 @@
     @else
         @include('product_s')
     @endif
-
+ 
     
 @endsection
 

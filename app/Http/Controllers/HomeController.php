@@ -140,7 +140,7 @@ public function sign()
 
 public function products(Request $request) 
 {
-        $setups = Setup::get();
+        $setups = Setup::get(); 
 
 
         $products = product::orderByDesc('id')->take(9)->get(); //where('sec7','>',5)->
@@ -215,6 +215,9 @@ public function s__products(Request $request)
         
 
         $products = product::orderByDesc('id')->take(9)->where('sec9_ar',$request->id)->get(); //where('sec7','>',5)->
+
+    $last = $products[0]->id; //where('sec7','>',5)->
+
         $toprated = product::orderByDesc('sec7')->take(9)->where('sec9_ar',$request->id)->get(); 
         $reviewd = product::orderByDesc('sec8')->take(9)->where('sec9_ar',$request->id)->get(); 
         $latest = product::orderByDesc('id')->take(9)->where('sec9_ar',$request->id)->get(); 
@@ -226,7 +229,7 @@ public function s__products(Request $request)
         
         
 
-        return view('index',compact('products','mostvisit','toprated','setups','mcats','scats','reviewd','latest'));
+        return view('index',compact('last','products','mostvisit','toprated','setups','mcats','scats','reviewd','latest'));
    
 }
 // Get sub categories when click on main category
