@@ -161,10 +161,9 @@ public function products(Request $request)
 public function load_products(Request $request) 
 {
     $products = product::orderBy('id')->where('id','<',$request->id)->take(9)->get(); //where('sec7','>',5)->
-
+if(count($products)>0){
     $last = $products[0]->id; //where('sec7','>',5)->
 $newprds='';
-
 foreach ($products as $product){
     $newprds.=
     '<div class="col-lg-3 col-md-4 col-sm-6 mix  new"  >
@@ -206,6 +205,11 @@ $arr=array($last, $newprds );
 
 
     return $arr;
+}else{
+    return 0;
+}
+    
+
 }
 
 // Get products that belongs to a specific sub category when clicked

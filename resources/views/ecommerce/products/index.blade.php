@@ -9,14 +9,13 @@
     <section id="product" class="team section-bg">
 
 
-      <div class="container" data-aos="fade-up">
+      <div class="container" style="direction: ltr;" data-aos="fade-up">
         <div class="section-title">
-          <h2>product</h2>
+          <h2>المنتجات</h2>
         </div>
         <div class="row">
 <label for="it_f" class="img_l col-lg-2 col-md-4 col-6 d-flex btn btn-primary">
-  Add product Member
-
+ اضف منتج جديد
   <div class="align-items-center justify-content-center">
        <img src="" style="display: none" class="img-fluid base64data_" alt="">
      </div> 
@@ -35,13 +34,35 @@
     <div class="member-info">
       <h4>{{ $product->sec2 }}</h4>
       <span>{{ $product->sec3 }}</span>
-      <p>{{ $product->sec4 }}</p>
-      <div class="social">
-        <a target="_blank" href="{{ $product->sec5 }}"><i class="ri-twitter-fill"></i></a>
-        <a target="_blank" href="{{ $product->sec6 }}"><i class="ri-facebook-fill"></i></a>
-        <a target="_blank" href="{{ $product->sec7 }}"><i class="ri-instagram-fill"></i></a>
-        <a target="_blank" href="{{ $product->sec8 }}"> <i class="ri-linkedin-box-fill"></i> </a>
-      </div>
+      <p><label>السعر</label>{{ $product->sec5 }}</p>
+      <p><label>الوحدة</label>{{ $product->sec4 }}</p>
+      <p style="
+      
+     
+      ">
+      <label>الكمية المتاحة</label>
+      <label style="
+      position: absolute;
+    left: 33px;
+    background: #40a846;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    bottom: 12px;
+    border-radius: 10px;
+      
+    @if($product->sec6<11)
+
+background:red;
+   @else
+
+
+   @endif
+
+
+
+      "> {{ $product->sec6 }}</label>
+     </p>
     </div>
   </div>
   <a style="margin-top:15px;"   data-toggle="modal" data-target="#editproduct" class="editproduct btn btn-success btn-get-started scrollto">
@@ -57,13 +78,13 @@
     <input class="sec6" type="hidden" value="{{ $product->sec6 }}">
     <input class="sec7" type="hidden" value="{{ $product->sec7 }}">
     <input class="sec8" type="hidden" value="{{ $product->sec8 }}">
-    Edit
+    تعديل
 </a>
-<a style="margin-top:15px;"   data-toggle="modal" data-target="#dele" class="del btn btn-danger btn-get-started scrollto"><input class="id" type="hidden" value="{{ $product->id }}">Delete</a>
+<a style="margin-top:15px;"   data-toggle="modal" data-target="#dele" class="del btn btn-danger btn-get-started scrollto"><input class="id" type="hidden" value="{{ $product->id }}">حذف</a>
 
 </div> 
 @empty
-    No product Founded Yet
+    لاتوجد منتجات بعد
 @endforelse
          
 
@@ -71,13 +92,13 @@
 
       </div>
     </section><!-- End product Section -->
-
-@include('ecommerce.products.delete')
+ @include('ecommerce.products.delete')
 @include('ecommerce.products.edit')
 @include('ecommerce.products.add')
 
 @include('ecommerce.products.imgcrop')
-@include('ecommerce.products.imgcrop_upload_product')
+@include('ecommerce.products.imgcrop_upload_product') 
+
  
 
 

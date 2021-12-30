@@ -4,7 +4,7 @@
           <form action="{{route('addmcat')}}" method="post">
              @csrf
             <label for="itf" class="imgl  ">
-              Change Image
+              غير الصورة
               <div class="align-items-center justify-content-center" style="width: 100px">
                     <img src="{{ public_path('port_imgs/1.png') }}" alt="Select Img" class="img-fluid" alt="">
                     <input type="hidden" value="" class="imgport_upload" name="img">

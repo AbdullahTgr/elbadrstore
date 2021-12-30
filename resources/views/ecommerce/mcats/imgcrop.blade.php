@@ -37,13 +37,13 @@ max-width: 1000px !important;
 <div class="modal-dialog modal-lg" role="document">
 <div class="modal-content">
 <div class="modal-header">
-<h5 class="modal-title" id="modalLabel">Laravel Cropper Js - Crop Image Before Upload - Tutsmake.com</h5>
+<h5 class="modal-title" id="modalLabel">اختر صورة </h5>
 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 <span aria-hidden="true">×</span>
 </button>
 </div>
 <div class="modal-body">
-<div class="img-container">
+<div class="img-container"  style="direction: ltr">
 <div class="row">
 <div class="col-md-8">
 <img id="image" src="https://avatars0.githubusercontent.com/u/3456749">
@@ -56,8 +56,8 @@ max-width: 1000px !important;
 </div>
 <div class="modal-footer">
 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-<button type="button" class="btn btn-primary" id="crop">Crop</button>
-<button type="button" class="btn btn-primary" id="uwc">Upload Without Crop</button>
+<button type="button" class="btn btn-primary" id="crop">قص</button>
+<button type="button" class="btn btn-primary" id="uwc">رفع الصورة كاملة </button>
 </div>
 </div>
 </div>

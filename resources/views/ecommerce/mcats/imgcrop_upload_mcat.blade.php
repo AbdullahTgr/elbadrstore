@@ -43,7 +43,7 @@ max-width: 1000px !important;
 </button>
 </div>
 <div class="modal-body">
-<div class="img-container">
+<div class="img-container "  style="direction: ltr">
 <div class="row">
 <div class="col-md-8">
 <img id="imag_e" src="https://avatars0.githubusercontent.com/u/3456749">

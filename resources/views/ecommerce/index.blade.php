@@ -15,7 +15,7 @@
 </style>
 <div class="container">
     <div class="row">
-        <h2 class="mb-2">Manage Your Data</h2>
+        <h2 class="mb-2">ادارة البيانات</h2>
 
         <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
           
@@ -25,7 +25,7 @@
                           <div class="row">
                             <div class="col-8">
                               <div class="numbers">
-                                <p class="text-sm mb-0 text-capitalize font-weight-bold">Main Categories</p>
+                                <p class="text-sm mb-0 text-capitalize font-weight-bold">الفئات الرئيسية</p>
                               </div>
                             </div>
                           </div>
@@ -42,7 +42,7 @@
                         <div class="row">
                           <div class="col-8">
                             <div class="numbers">
-                              <p class="text-sm mb-0 text-capitalize font-weight-bold">Sub Categories</p>
+                              <p class="text-sm mb-0 text-capitalize font-weight-bold">الفئات الفرعية</p>
                             </div>
                           </div>
                         </div>
@@ -60,7 +60,7 @@
                       <div class="row">
                         <div class="col-8">
                           <div class="numbers">
-                            <p class="text-sm mb-0 text-capitalize font-weight-bold">Main Products</p>
+                            <p class="text-sm mb-0 text-capitalize font-weight-bold">المنتجات</p>
                           </div>
                         </div>
                       </div>

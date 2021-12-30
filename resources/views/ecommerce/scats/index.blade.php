@@ -15,7 +15,7 @@
         </div>
         <div class="row">
 <label for="it_f" class="img_l col-lg-2 col-md-4 col-6 d-flex btn btn-primary">
-  Add scat Member
+ اضف فئة فرعية
 
   <div class="align-items-center justify-content-center">
        <img src="" style="display: none" class="img-fluid base64data_" alt="">
@@ -63,7 +63,7 @@
 
 </div> 
 @empty
-    No scat Founded Yet
+    لاتوجد فئات فرعية بعد 
 @endforelse
          
 

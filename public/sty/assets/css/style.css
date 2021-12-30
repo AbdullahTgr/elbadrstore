@@ -11,6 +11,7 @@
 body {
   font-family: 'Cairo', sans-serif;
   color: #444444;
+  direction: rtl;
 }
 
 a {
@@ -1097,8 +1098,7 @@ section {
 
 .team .member .pic {
   overflow: hidden;
-  width: 180px;
-  border-radius: 50%;
+  width: 70%;
 }
 
 .team .member .pic img {
@@ -1111,6 +1111,7 @@ section {
 
 .team .member .member-info {
   padding-left: 30px;
+  text-align: right;
 }
 
 .team .member h4 {

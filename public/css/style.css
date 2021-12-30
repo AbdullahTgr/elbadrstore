@@ -3507,12 +3507,12 @@ ol {
 
 .loadingarea{
 	width: 100%;
-    background: #cfefea;
     text-align: center;
     padding: 10px;
     padding-left: 45%;
 }
 .loadingarea button{
+	height: 50px;
     border: none;
     width: 25%;
 }

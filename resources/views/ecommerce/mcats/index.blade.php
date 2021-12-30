@@ -10,11 +10,11 @@
 
       <div class="container" data-aos="fade-up">
         <div class="section-title">
-          <h2>mcat</h2>
+          <h2>فئات رئيسية</h2>
         </div>
         <div class="row">
 <label for="it_f" class="img_l col-lg-2 col-md-4 col-6 d-flex btn btn-primary">
-  Add mcat Member
+  اضف فئة رئيسية 
 
   <div class="align-items-center justify-content-center">
        <img src="" style="display: none" class="img-fluid base64data_" alt="">
@@ -56,13 +56,13 @@
     <input class="sec6" type="hidden" value="{{ $mcat->sec6 }}">
     <input class="sec7" type="hidden" value="{{ $mcat->sec7 }}">
     <input class="sec8" type="hidden" value="{{ $mcat->sec8 }}">
-    Edit
+    تعديل
 </a>
 <a style="margin-top:15px;"   data-toggle="modal" data-target="#dele" class="del btn btn-danger btn-get-started scrollto"><input class="id" type="hidden" value="{{ $mcat->id }}">Delete</a>
 
 </div> 
 @empty
-    No mcat Founded Yet
+    لاتوجد فئات رئيسية بعد 
 @endforelse
          
 

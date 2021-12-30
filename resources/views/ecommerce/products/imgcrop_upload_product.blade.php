@@ -43,7 +43,7 @@ max-width: 1000px !important;
 </button>
 </div>
 <div class="modal-body">
-<div class="img-container">
+<div class="img-container"  style="direction: ltr">
 <div class="row">
 <div class="col-md-8">
 <img id="imag_e" src="https://avatars0.githubusercontent.com/u/3456749">
@@ -57,24 +57,26 @@ max-width: 1000px !important;
 <div class="port_inputs">
     
     
-    Product Name
+    اسم المنتج
     <textarea class="form-control sec2" name="sec2" style="width: 100%"></textarea> 
     
-    Product Description
+   الوصف 
     <textarea class="form-control sec3" name="sec3" style="width: 100%"></textarea> 
     
-    Unit
+    الوحدة (قطعة\ كيلوجرام)
     <textarea class="form-control sec4" name="sec4" style="width: 100%"></textarea> 
 
-    Price Per Unit
+    السعر
     <textarea class="form-control sec5" name="sec5" style="width: 100%"></textarea> 
+    الكمية
+    <textarea class="form-control sec6" name="sec6" style="width: 100%"></textarea> 
     
     <input type="hidden"  id="sec9_ar" value="@if(count($scats)!=0){{ $scats[0]->id }}@endif" class="sec9_ar">
     <select id="mySelect" onchange="myFunction()"  >
         @forelse ($scats as $scat)
             <option value="{{ $scat->id }}">{{ $scat->sec2 }}</option>
         @empty
-        <option value="">No Sub categories Please <a href="{{ route('scats') }}"> Add</a></option>
+        <option value="">لاتوجد فئات فرعية اضف من فضلك  <a href="{{ route('scats') }}"> اضف</a></option>
             
         @endforelse
     </select>
@@ -95,9 +97,9 @@ max-width: 1000px !important;
 </div>
 
 <div class="modal-footer">
-<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-<button type="button" class="btn btn-primary" id="crop_">Crop</button>
-<button type="button" class="btn btn-primary" id="uwc_">Upload Without Crop</button>
+<button type="button" class="btn btn-secondary" data-dismiss="modal">الغاء</button>
+<button type="button" class="btn btn-primary" id="crop_">قص</button>
+<button type="button" class="btn btn-primary" id="uwc_">رفع الصورة كاملة</button>
 </div>
 </div>
 </div>

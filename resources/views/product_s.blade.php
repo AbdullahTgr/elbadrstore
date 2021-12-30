@@ -148,7 +148,6 @@
 
         </div>
         <div class="row featured__filter loadingarea">
-
                 <button class="loadmore" data-id="{{ $last }}" >... المذيد</button>
         </div> 
 

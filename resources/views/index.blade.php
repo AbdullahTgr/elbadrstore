@@ -65,6 +65,7 @@
     ///////////////////////////////////////////////////////////////////////////////
 
     $(document).on("click", ".loadmore", function(e){
+        $('.loadmore').text('تحميل ...');
         loadmore($(this).attr('data-id'));
         
     });
@@ -79,8 +80,14 @@
     data: {'_token': $('meta[name="_token"]').attr('content'), 'id':$id }, 
         success: function(data){
             console.log(data);
-            $('.loadmore').attr('data-id',data[0]);
-            $(".load").append(data['1']);
+            if(data==0){
+
+                $('.loadmore').text('لاتوجد نتائج اخري');
+            }else{
+                $('.loadmore').attr('data-id',data[0]);
+                $(".load").append(data['1']);
+                $('.loadmore').text('... المذيد');
+            }
         }
     });
     
