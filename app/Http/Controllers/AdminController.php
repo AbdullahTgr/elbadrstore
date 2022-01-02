@@ -97,6 +97,12 @@ class AdminController extends Controller
         return view('ecommerce.index');
     }
     
+    public function panars()
+    {
+        return view('panars.index');
+    }
+    
+    
     public function mcats()
     {
         $mcat = mcat::get();

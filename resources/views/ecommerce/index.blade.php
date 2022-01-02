@@ -68,6 +68,23 @@
                   </div>
       </a>
   </div>
+
+  <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+        
+    <a href="{{route('panars')}}"> 
+                <div class="card">
+                  <div class="card-body p-3">
+                    <div class="row">
+                      <div class="col-8">
+                        <div class="numbers">
+                          <p class="text-sm mb-0 text-capitalize font-weight-bold">الصور</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    </a>
+</div>
       </div>
 </div>
 @endsection

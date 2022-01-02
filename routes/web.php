@@ -141,6 +141,8 @@ Route::get('/mcats', [App\Http\Controllers\AdminController::class, 'mcats'])->na
 Route::get('/scats', [App\Http\Controllers\AdminController::class, 'scats'])->name('scats');
 Route::get('/m_products', [App\Http\Controllers\AdminController::class, 'm_products'])->name('m_products');
 
+Route::get('/panars', [App\Http\Controllers\AdminController::class, 'panars'])->name('panars');
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 Route::get('/addmcat', [App\Http\Controllers\AdminController::class, 'addmcat'])->name('addmcat')->middleware('roles:1');
