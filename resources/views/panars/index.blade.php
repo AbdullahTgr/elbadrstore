@@ -20,18 +20,39 @@
         <input type="hidden" value="" class="full_img">
         <input type="hidden" value="" class="imgdest">
         <input type="hidden" value="" class="fullimg">
-    <label for="itf" class="imgl ">
-      <div class="pic">
-        <img src="img/breadcrumb.jpg" class="img-fluid base64data" alt="">
-      </div>
-     </label> 
+
+        <label for="itf" class="imgl col-6">
+          <div class="pic">
+            <img src="img/breadcrumb.jpg" class="img-fluid base64data" alt="">
+          </div>
+         </label>  
+         <label for="itf" class="imgl col-6">
+           <div class="pic">
+             <img src="img/hero/banner.jpg" class="img-fluid base64data" alt="">
+           </div>
+          </label>
+
+          <label for="itf" class="imgl col-6">
+            <div class="pic">
+              <img src=" img/banner/banner-1.jpg " class="img-fluid base64data" alt="">
+            </div>
+           </label>
+           <label for="itf" class="imgl col-6">
+             <div class="pic">
+               <img src=" img/banner/banner-2.jpg " class="img-fluid base64data" alt="">
+             </div>
+            </label>
+          
         
+
+
+
       </div>
 </div>
 
 
 
-@include('panars.imgcrop')
+@include('panars.imgcrop') 
 @endsection
 
 
@@ -43,8 +64,8 @@
 <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.11.3/datatables.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
+<script type="text/javascript" src="{{asset('da/js/tasks.js')}}"></script>
 <script>
-  
+   
 </script>
 @endsection

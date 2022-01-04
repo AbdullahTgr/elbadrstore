@@ -879,7 +879,7 @@ public function deletemcat(Request $request)
 
 public function uploadCropImage_scat(Request $request)
 {  
-    $scat = new scat();
+        $scat = new scat();
     
     
     

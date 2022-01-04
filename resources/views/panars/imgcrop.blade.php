@@ -145,7 +145,7 @@ success: function(data){
 
 
 
-
+ 
 function nocrp(){
     
 var base64=$('.fullimg').val(); 
