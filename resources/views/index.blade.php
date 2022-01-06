@@ -4,7 +4,11 @@
   
 
     <!-- Hero Section Begin -->
-    <section class="hero">
+    <section class="hero" style="
+    
+    text-align: right;
+    direction: rtl;
+    ">
         <div class="container">
             <div class="row">
                 

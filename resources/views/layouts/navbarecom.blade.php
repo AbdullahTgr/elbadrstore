@@ -33,17 +33,12 @@
             <nav class="humberger__menu__nav mobile-menu">
                 <ul>
                     <li class="active"><a href="./index.html">{{ trans('sentence.home')}}</a></li>
-                    <li><a href="./shop-grid.html">{{ trans('sentence.shop')}}</a></li>
-                    <li><a href="./blog.html">{{ trans('sentence.blog')}}</a></li>
                     <li><a href="./contact.html">{{ trans('sentence.contact')}}</a></li>
                 </ul>
             </nav>
             <div id="mobile-menu-wrap"></div>
             <div class="header__top__right__social">
                 <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-                <a href="#"><i class="fa fa-pinterest-p"></i></a>
             </div>
             <div class="humberger__menu__contact">
                 <ul>
@@ -70,9 +65,6 @@
                       <div class="header__top__right">
                           <div class="header__top__right__social">
                               <a href="#"><i class="fa fa-facebook"></i></a>
-                              <a href="#"><i class="fa fa-twitter"></i></a>
-                              <a href="#"><i class="fa fa-linkedin"></i></a>
-                              <a href="#"><i class="fa fa-pinterest-p"></i></a>
                           </div>
                           <div class="header__top__right__language">
                               <img src="img/language.png" alt="">
@@ -93,28 +85,26 @@
       </div>
       <div class="container">
           <div class="row">
-              <div class="col-lg-3">
-                  <div class="header__logo">
-                      <a href="/"><img style="width: 60px;" src="img/logo.png" alt=""></a>
-                  </div>
-              </div>
-              <div class="col-lg-6">
-                  <nav class="header__menu">
-                      <ul>
-                          <li class="active"><a href="/">{{ trans('sentence.home')}}</a></li>
-                          <li><a href="./shop-grid.html">{{ trans('sentence.shop')}}</a></li>
-                          <li><a href="./blog.html">{{ trans('sentence.blog')}}</a></li>
-                          <li><a href="./contact.html">{{ trans('sentence.contacts')}}</a></li>
-                      </ul>
-                  </nav>
-              </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3 tar">
                   <div class="header__cart">
                       <ul>
                           <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
                           <li><a href="{{ route('cart.list') }}"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
                       </ul>
                       <div class="header__cart__price"> <span>{{ Cart::getTotal() . trans('sentence.currency')}}</span></div>
+                  </div>
+              </div>
+              <div class="col-lg-6 tar">
+                  <nav class="header__menu">
+                      <ul>
+                          <li><a href="./contact.html">{{ trans('sentence.contacts')}}</a></li>
+                          <li class="active"><a href="/">{{ trans('sentence.home')}}</a></li>
+                      </ul>
+                  </nav>
+              </div>
+              <div class="col-lg-3 tar">
+                  <div class="header__logo">
+                      <a href="/"><img style="width: 60px;" src="img/logo.png" alt=""></a>
                   </div>
               </div>
           </div>
