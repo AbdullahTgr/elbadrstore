@@ -65,6 +65,7 @@ return [
 'latestproducts' => 'اخر منتجات',
 'topratedproducts' => 'الاعلي تقيما',
 'reviewedproducts' => 'المنتجات المقيمة',
+'freeshipping' => 'شحن مجاني لعملاء 6 اكتوبر',
 
 
 

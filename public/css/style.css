@@ -32,6 +32,7 @@
 
 html,
 body {
+	direction: rtl;
 	height: 100%;
 	font-family: "Cairo", sans-serif;
 	-webkit-font-smoothing: antialiased;
@@ -81,6 +82,18 @@ p {
 	font-weight: 400;
 	line-height: 26px;
 	margin: 0 0 15px 0;
+}
+
+.hero__text 
+p {
+    font-size: 16px;
+    font-family: "Cairo", sans-serif;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 26px;
+    background: #00000024;
+    padding: 15px;
+    margin: 0 0 15px 0;
 }
 
 img {
@@ -422,7 +435,7 @@ ol {
 .header__menu ul li {
 	list-style: none;
     display: inline-block;
-    margin-right: 50px;
+    margin-left: 50px;
     position: relative;
 }
 
@@ -507,7 +520,7 @@ ol {
 .header__cart ul li {
 	list-style: none;
 	display: inline-block;
-	margin-right: 15px;
+	margin-right: 50px;
 }
 
 .header__cart ul li:last-child {
@@ -662,6 +675,7 @@ ol {
 	color: #1c1c1c;
 	font-weight: 700;
 	padding-right: 18px;
+	padding-left: 18px;
 	padding-top: 11px;
 	position: relative;
 }
@@ -726,6 +740,8 @@ ol {
 
 .hero__search__phone__text {
 	overflow: hidden;
+	margin: 0;
+    margin-right: 85px;
 }
 
 .hero__search__phone__text h5 {
@@ -758,7 +774,7 @@ ol {
 
 .hero__text h2 {
 	font-size: 46px;
-	color: #252525;
+	color: #ffffff;
 	line-height: 52px;
 	font-weight: 700;
 	margin: 10px 0;
@@ -3279,7 +3295,7 @@ ol {
 		border: 1px solid #1c1c1c;
 		cursor: pointer;
 		position: absolute;
-		right: 15px;
+		left: 15px;
 		top: 22px;
 	}
 	.header .container {
@@ -3307,6 +3323,8 @@ ol {
 	.humberger__menu__wrapper.show__humberger__menu__wrapper {
 		opacity: 1;
 		right: 0;
+		direction: rtl;
+		text-align: right;
 	}
 	.humberger__menu__logo {
 		margin-bottom: 30px;

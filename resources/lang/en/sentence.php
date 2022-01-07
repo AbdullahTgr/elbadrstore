@@ -64,6 +64,8 @@ return [
 'search' => 'Search',
 'whatdoyouneed' => 'What Do You Need',
 'allcategories' => 'All Categories',
+
+'freeshipping' => 'Free shipping for 6 of october city',
 ];
 
 

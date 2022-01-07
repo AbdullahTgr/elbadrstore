@@ -54,7 +54,7 @@
           <div class="container">
               <div class="row">
                   <div class="col-lg-6 col-md-6">
-                      <div class="header__top__left">
+                      <div class="header__top__right">
                           <ul>
                               <li><i class="fa fa-envelope"></i> elbadrstore@gmail.com</li>
                               <li>{{ trans('sentence.freeshipping')}}</li>
@@ -62,7 +62,9 @@
                       </div>
                   </div>
                   <div class="col-lg-6 col-md-6">
-                      <div class="header__top__right">
+                      <div class="header__top__left" style="
+                      padding: 10px 0 13px;
+                      ">
                           <div class="header__top__right__social">
                               <a href="#"><i class="fa fa-facebook"></i></a>
                           </div>
@@ -86,25 +88,25 @@
       <div class="container">
           <div class="row">
               <div class="col-lg-3 tar">
+                  <div class="header__logo">
+                      <a href="/"><img style="width: 60px;" src="img/logo.png" alt=""></a>
+                  </div>
+              </div>
+              <div class="col-lg-6 tar">
+                  <nav class="header__menu">
+                      <ul>
+                          <li class="active"><a href="/">{{ trans('sentence.home')}}</a></li>
+                          <li><a href="./contact.html">{{ trans('sentence.contacts')}}</a></li>
+                      </ul>
+                  </nav>
+              </div>
+              <div class="col-lg-3 tar">
                   <div class="header__cart">
                       <ul>
                           <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
                           <li><a href="{{ route('cart.list') }}"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
                       </ul>
                       <div class="header__cart__price"> <span>{{ Cart::getTotal() . trans('sentence.currency')}}</span></div>
-                  </div>
-              </div>
-              <div class="col-lg-6 tar">
-                  <nav class="header__menu">
-                      <ul>
-                          <li><a href="./contact.html">{{ trans('sentence.contacts')}}</a></li>
-                          <li class="active"><a href="/">{{ trans('sentence.home')}}</a></li>
-                      </ul>
-                  </nav>
-              </div>
-              <div class="col-lg-3 tar">
-                  <div class="header__logo">
-                      <a href="/"><img style="width: 60px;" src="img/logo.png" alt=""></a>
                   </div>
               </div>
           </div>
